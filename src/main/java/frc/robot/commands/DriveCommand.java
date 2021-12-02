@@ -18,7 +18,7 @@ public class DriveCommand extends CommandBase {
 
   @Override
   public void execute() {
-    driveSystem.mecanum(-Robot.gamepad.getY() / 2, Robot.gamepad.getX() / 2, Robot.gamepad.getZ() / 2);
+    driveSystem.mecanum(-Robot.gamepad.getY() * 0.5, Robot.gamepad.getX() * 0.8, Robot.gamepad.getZ() * 0.5);
   }
 
   @Override

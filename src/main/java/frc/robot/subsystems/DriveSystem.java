@@ -25,7 +25,6 @@ public class DriveSystem extends SubsystemBase {
 
   public void mecanum(double forward, double sideways, double rotation) {
     forward *= -1;
-    System.out.println(forward + " " + sideways);
     frontRight.set((forward + sideways) + rotation);
     backRight.set((forward - sideways)  + rotation);
     frontLeft.set(-(forward - sideways) + rotation);
